@@ -5,9 +5,15 @@
 /*複数行の
 コメントアウト*/
 
+echo "Hello World";
+
 ?>
 
+<br>
+
+You have
 <?php
-echo ("Hello World");
 
+echo 2 + 3;
 ?>
+cats.
