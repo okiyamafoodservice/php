@@ -42,3 +42,27 @@ echo PHP_INT_MAX
 ?>
 
 <?php var_dump("本日は") ?>
+
+<br>
+
+<?php
+
+$clientname = 'Hanako Yamada';
+
+echo "ようこそ" . $clientname . "様"; ?>
+
+<?php
+
+//文字列を使うときは.を使う
+?>
+
+<?php
+
+echo "<hr>";
+$a = "a";
+$b = "b";
+echo ($a . $b);
+echo "<hr>";
+
+echo ($a + $b);
+?>
