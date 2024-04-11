@@ -12,8 +12,5 @@ echo "Hello World";
 <br>
 
 You have
-<?php
-
-echo 2 + 3;
-?>
+<?php echo 2 + 3; ?>
 cats.
