@@ -255,13 +255,23 @@ while($j>=150){
 }
 
 ?>
+<!-- 94P -->
 
+Q1
 <?php
-
 $i = 0;
 while($i<3){
         echo "PHP" . "<br>";
         $i++;
 }
+?>
 
+Q2
+
+<?php
+$i = 1;
+while($i<3){
+        echo "PHP" . "<br>";
+        $i++;
+}
 ?>
