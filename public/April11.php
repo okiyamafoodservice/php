@@ -509,3 +509,67 @@ $fruit = [$class1,$class2];
 
 echo $fruit[0][2];
 ?>
+
+
+<?php
+echo "<hr>";
+?>
+<!-- 連想配列 -->
+
+
+<?php
+$result1 = array("math"=>90,"english"=>80,"Japanese"=>70);
+
+var_dump($result1);
+
+$result2 = ["history"=>80,"science"=>70];
+
+var_dump($result2);
+
+?>
+
+<br>
+<?php
+echo "<hr>";
+?>
+
+<?php
+$result1 = array("math"=>90,"english"=>80,"Japanese"=>70);
+
+var_dump($result1);
+
+
+$result1["math"] = 45;
+var_dump($result1);
+
+
+$result1["music"] = 100;
+var_dump($result1);
+?>
+
+<?php
+
+$result1 = ["math"=>90,"english"=>80,"Japanese"=>70];
+
+$friends = ["はるき"=>$result1];
+
+
+var_dump($friends);
+
+$friends["まさ"] = ["math"=>90,"english"=>80,"Japanese"=>70];
+var_dump($friends);
+
+?>
+
+
+<!-- check Test -->
+
+q1 =>
+
+q2
+
+<?php
+
+$result1 = ["math"=>90,"english"=>80,"Japanese"=>70];
+
+echo $result1["english"];
