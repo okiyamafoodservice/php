@@ -269,8 +269,8 @@ while($i<3){
 Q2
 
 <?php
-$i = 1;
-while($i<3){
+$i = 0;
+while(1){
         echo "PHP" . "<br>";
         $i++;
 }
