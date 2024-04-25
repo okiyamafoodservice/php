@@ -286,7 +286,7 @@ echo "<hr>";
 
 <?php
 
-$i = 1;
+$i = 3;
 
 switch($i){
         case 1:
@@ -296,5 +296,7 @@ switch($i){
                 echo "2です";
                 break;
         default:
+        echo "1でも2でもないです";
+
 }
 ;?>
