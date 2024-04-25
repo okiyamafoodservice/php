@@ -268,10 +268,33 @@ while($i<3){
 
 Q2
 
-<?php
+無限に出力される
+
+< ?php
 $i = 0;
 while(1){
         echo "PHP" . "<br>";
         $i++;
 }
 ?>
+
+<?php
+echo "<hr>";
+?>
+
+<!-- switch文 -->
+
+<?php
+
+$i = 1;
+
+switch($i){
+        case 1:
+                echo "1です";
+                break;
+        case 2:
+                echo "2です";
+                break;
+        default:
+}
+;?>
