@@ -466,3 +466,33 @@ $friends = ["はるき","かおる","ひでと"];
 $friends[] = "まさとし";
 var_dump($friends);
 ?>
+
+<br>
+
+<?php
+$friends = ["はるき","かおる","ひでと"];
+$friends[1] = "まさとし";
+$friends[5] = "まさ";
+var_dump($friends);
+?>
+
+<br>
+
+<!-- 多次元配列 -->
+
+<?php
+$class1=array("はるき","かおる","ひでと");
+$class2=array("まさとし","たかし","まさ");
+
+$classes = array($class1,$class2);
+
+var_dump($classes);
+?>
+
+<!-- checktest -->
+Q1
+多次元配列
+
+Q2
+<?php
+$fruit[0]=>
