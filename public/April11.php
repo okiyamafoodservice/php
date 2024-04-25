@@ -409,7 +409,10 @@ echo "whileループを抜けました";
 
 q5
 
+
+
 <?php
+$total = 10;
 if($total==10){
         echo"10です";
 }else if($total==20){
@@ -420,7 +423,7 @@ if($total==10){
 ?>
 
 <?php
-
+$total = 10;
 switch($total){
         case 10:
                 echo "10です";
@@ -440,5 +443,26 @@ echo "<hr>";
 
 <?php
 $friends = array("はるき","かおる","ひでと");
+var_dump($friends);
+?>
+
+<br>
+
+<?php
+$friends = ["はるき","かおる","ひでと"];
+var_dump($friends);
+
+
+echo "0番目の要素は" . $friends[0] . "です" . "<br>";
+echo "1番目の要素は" . $friends[1] . "です" . "<br>";
+echo "2番目の要素は" . $friends[2] . "です" . "<br>";
+
+?>
+
+<!-- 値の追加 -->
+
+<?php
+$friends = ["はるき","かおる","ひでと"];
+$friends[] = "まさとし";
 var_dump($friends);
 ?>
