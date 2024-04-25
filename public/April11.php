@@ -348,7 +348,89 @@ do{
 $i = 100;
 do{
         echo "買います". "<br>";
-        $j = $j - 150;
+        $j = $j - 50;
         echo "残金は" . $j . "円です" . "<br>";
 }while($i>=150);
 ?>
+
+<!-- check test -->
+
+q1
+
+次の処理
+<br>
+
+Q2
+case以外の処理
+<br>
+
+q3
+for
+
+<?php
+
+for($i=10;$i>0;$i--){
+        echo $i . "<br>";
+}
+?>
+
+<?php
+echo "<hr>";
+?>
+
+while
+
+<?php
+
+$i = 10;
+
+while($i>0){
+        echo $i . "<br>";
+        $i--;
+}
+
+?>
+
+<br>
+
+q4
+
+<?php
+
+$i = 2;
+while ($i<2){
+        echo "whileループの例題です" . "<br>";
+        $i++;
+}
+echo "whileループを抜けました";
+?>
+
+<br>
+
+q5
+
+<?php
+if($total==10){
+        echo"10です";
+}else if($total==20){
+        echo "20です";
+}else{
+        echo"その他";
+}
+
+
+?>
+
+<?php
+
+switch($total){
+        case 10:
+                echo "10です";
+                break;
+        case 20:
+                echo "20です";
+                break;
+        default:
+                echo "その他";
+}
+;?>
