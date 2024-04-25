@@ -278,16 +278,28 @@ while(1){
 }
 ?>
 
+
+
+
+
+
+<?php
+$i = 0;
+while($i<3){
+        echo "PHP" . "<br>";
+        $i++;
+}
+?>
+
 <?php
 echo "<hr>";
 ?>
 
+
 <!-- switch文 -->
 
+<!-- breakを書かないと処理が続けられる -->
 <?php
-
-$i = 3;
-
 switch($i){
         case 1:
                 echo "1です";
@@ -299,4 +311,35 @@ switch($i){
         echo "1でも2でもないです";
 
 }
-;?>
+?>
+
+<br>
+
+<!-- 空のケース -->
+
+
+<?php
+$i=1;
+switch($i){
+        case 0;
+        case 1:
+                echo "0か1です";
+                break;
+        case 2:
+                echo "2です";
+                break;
+        case 3:
+                break;
+        // defaultを書かないと、どれにも当てはまらないときは何もしない
+
+
+}       ?>
+
+<!-- do while文 -->
+<?php
+$i = 0;
+do{
+        echo $i . "<br>";
+        $i++;
+}while($i<3);
+?>
