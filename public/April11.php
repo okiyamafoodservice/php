@@ -417,8 +417,6 @@ if($total==10){
 }else{
         echo"その他";
 }
-
-
 ?>
 
 <?php
@@ -434,3 +432,13 @@ switch($total){
                 echo "その他";
 }
 ;?>
+
+
+<?php
+echo "<hr>";
+?>
+
+<?php
+$friends = array("はるき","かおる","ひでと");
+var_dump($friends);
+?>
