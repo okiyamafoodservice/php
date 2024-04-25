@@ -487,11 +487,25 @@ $class2=array("まさとし","たかし","まさ");
 $classes = array($class1,$class2);
 
 var_dump($classes);
-?>
 
+echo $classes[0][1] . "<br>";
+?>
+<?php
+echo "<hr>";
+?>
 <!-- checktest -->
 Q1
 多次元配列
-
+<?php
+echo "<hr>";
+?>
 Q2
-$fruit[0[2]]
+
+<?php
+$class1=["レモン","バナナ","イチゴ"];
+$class2=["りんご","みかん"];
+$fruit = [$class1,$class2];
+
+
+echo $fruit[0][2];
+?>
