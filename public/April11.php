@@ -551,20 +551,26 @@ var_dump($result1);
 
 $result1 = ["math"=>90,"english"=>80,"Japanese"=>70];
 
-$friends = ["はるき"=>$result1];
+$friends = ["Haruki"=>$result1];
 
 
 var_dump($friends);
 
-$friends["まさ"] = ["math"=>90,"english"=>80,"Japanese"=>70];
+$friends["Kaoru"] = ["math"=>90,"english"=>80,"Japanese"=>70];
 var_dump($friends);
 
+?>
+
+<?php
+echo "<hr>";
 ?>
 
 
 <!-- check Test -->
 
 q1 =>
+
+<br>
 
 q2
 
@@ -573,3 +579,165 @@ q2
 $result1 = ["math"=>90,"english"=>80,"Japanese"=>70];
 
 echo $result1["english"];
+
+?>
+
+<?php
+echo "<hr>";
+?>
+
+5/8
+
+<?php
+$friends = ["はるき","かおる","ひでと"];
+for($i=0;$i<3;$i++){
+        echo $friends[$i] . "<br>";
+}       ?>
+
+
+ foreachと連想配列
+
+
+ <br>
+
+ <!-- foreach(配列 as $変数名) -->
+
+
+<?php
+$result = ["math"=>90,"english"=>80,"Japanese"=>70];
+foreach($result1 as $score ){
+        echo $score."<br>";
+}
+?>
+
+foreach構文で連想配列のキーと値を出力
+<br>
+
+<?php
+$results = ["math"=>90,"english"=>80,"Japanese"=>70];
+foreach($results as $title => $score){
+        echo $title . ":" . $score . "<br>";
+}
+?>
+
+<br>
+
+foreach構文で通常配列のキーと値を出力
+<br>
+<?php
+
+$numbers = [2,4,6];
+foreach($numbers as $key=>$value){
+        $numbers[$key] = $value *10;
+}
+var_dump($numbers);
+?>
+
+<br>
+
+<?php
+echo "<hr>";
+?>
+
+Q1
+<br>
+
+$lists=["野菜"=>["きゅうり","かぼちゃ","ジャガイモ"],"果物"=>["いちご","りんご","バナナ"]];
+
+<br>
+Q2
+<br>
+A:as B:=>
+<br>
+Q3
+<br>
+<?php
+
+$lists=["野菜"=>["きゅうり","かぼちゃ","ジャガイモ"],"果物"=>["いちご","りんご","バナナ"]];
+
+foreach($lists as $key=>$values){
+        echo $key . ":<br>";
+        foreach($values as $value) {
+                echo "  - " . $value . "<br>";
+        }
+}
+?>
+
+<?php
+echo "<hr>";
+?>
+
+
+<?php
+echo "<hr>";
+?>
+
+関数
+
+<br>
+
+
+引数のない関数
+<br>
+
+
+$now_time=$time();
+
+<br>
+
+返り値を使わない関数
+
+$fruits=["りんご","みかん","バナナ"];
+sort($fruits);//アルファベット順にソートされる
+
+
+<?php
+echo "<hr>";
+?>
+
+Q1:返り値
+<br>
+Q2:　引数:morning 結果:7
+//mb_strlen関数は文字数を返す
+
+<?php
+echo "<hr>";
+?>
+
+
+function get_price($price){<br>
+        $price=$price*1.1;<br>
+        return round($price);<br>
+//roundは小数点以下を四捨五入する関数
+}<br>
+        echo get_price(300)     ;<br>
+//330が出力される
+
+<br>
+
+
+<?php
+function default_demo($name="太郎"){
+        echo "名前は" . $name . "です";
+
+}
+default_demo();
+default_demo("花子");
+?>
+<br>
+<br>
+<br>
+<?php
+function vending_machine($price,$juice_name){
+        if($price>=120){
+                echo $juice_name . "のお買い上げありがとうございます<br>";
+}else{
+        return $juice_name."の購入金額が不足しています<br>";
+
+}
+}
+echo vending_machine(120,"オレンジジュース");
+$price=90;
+$juice_name="アップルジュース";
+echo vending_machine($price,$juice_name);
+?>
