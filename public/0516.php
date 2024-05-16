@@ -38,4 +38,6 @@ date("H:i:s");
 <br>
 
 Q2
-mktime(0, 0, 0, 5, 15, 2024);
+<?php
+$yesterday = mktime(0, 0, 0, 5, 15, 2024);
+echo date("Y-m-d", $yesterday);
