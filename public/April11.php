@@ -734,10 +734,24 @@ function vending_machine($price,$juice_name){
 }else{
         return $juice_name."の購入金額が不足しています<br>";
 
-}
-}
+}}
+
+include "./functions.php";
+
 echo vending_machine(120,"オレンジジュース");
 $price=90;
 $juice_name="アップルジュース";
 echo vending_machine($price,$juice_name);
+
+
 ?>
+
+<br>
+
+<?php
+echo "<hr>";
+?>
+
+Q1 return
+
+Q2 A:2 B:3
