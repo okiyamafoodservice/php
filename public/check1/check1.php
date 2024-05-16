@@ -49,6 +49,20 @@
             font-weight: bold;
         }
 
+          table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
     </style>
 </head>
 <body>
@@ -84,6 +98,10 @@ foreach ($results as $key => $value) {
     $total += $value;
 }
 ?>
+   <tr>
+        <th>Total</th>
+        <th><?php echo $total;?></th>
+    </tr>
 
 </body>
 </html>
