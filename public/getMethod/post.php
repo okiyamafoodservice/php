@@ -9,7 +9,8 @@ if($gender =="man"){
 }
 
 $tmp_star=$_POST['star'];
-for($i=0; $i<count($tmp_star); $i++){
+$star="";
+for($i=0; $i<$tmp_star; $i++){
     $star.="★";
 }
 
@@ -18,3 +19,16 @@ for(;$i<5;$i++){
 }
 
 $other=$_POST['other'];
+?>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+    <h1>アンケート結果</h1>
+    <p>お名前:<?php echo $name; ?></p>
+    <p>性別:<?php echo $gender; ?></p>
+    <p>評価:<?php echo $star; ?></p>
+    <p>ご意見:<?php echo $other; ?></p>
+</body>
+</html>
