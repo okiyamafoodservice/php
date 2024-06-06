@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $msg=null;
 if(isset($_POST['upload'])){
     $file=$_FILES['upfile'];
@@ -44,4 +44,4 @@ if(isset($_POST['upload'])){
             <input type="submit" value="アップロード" name="upload" class="btn btn-primary">
         </form>
     </div>
-</html>
+</html> -->

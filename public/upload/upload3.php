@@ -19,7 +19,7 @@
         $new_name .= '.png';
         break;
       default:
-        header('Location: upload.php');
+        header('Location: upload3.php');
         exit();
     }
     if (move_uploaded_file($old_name, 'album/'.$new_name)){
@@ -51,7 +51,7 @@
             echo '<div class="alert alert-'.$alert.'" role="alert">'.$msg.'</div>';
           }
         ?>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <form action="upload3.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label>アップロードファイル</label>
             <input type="file" name="image" class="form-control-file">
