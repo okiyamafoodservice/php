@@ -11,5 +11,5 @@
           <li class="nav-item"><a class="nav-link" href="album.php">アルバム</a></li>
           <li class="nav-item"><a class="nav-link" href="#">掲示板</a></li>
         </ul>
-      </div>
+      </div
     </nav>

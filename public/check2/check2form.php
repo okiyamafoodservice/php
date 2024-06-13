@@ -1,4 +1,4 @@
-<?phpinclude ('check2_data.php');
+<?php include ('check2_data.php');
 
 $message = '回答は、';
 
@@ -13,6 +13,13 @@ $message = '回答は、';
 <h1>フォーム</h1>
 <?php
 echo $message;
+if (isset($_POST['fruit'])) {
+	$fruit = $_POST['fruit'];
+	echo $fruits[$fruit];
+} else {
+	echo '選択されていません。';
+}
 ?>
+
 </body>
 </html>
